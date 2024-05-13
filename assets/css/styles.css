@@ -9,14 +9,13 @@
 
 /*===== Colores =====*/
 :root{
-  --first-color: hsl(38, 92%, 58%);
-  --first-color-light: hsl(38, 100%, 78%);
-  --first-color-alt: hsl(32, 75%, 50%);
-  --second-color: hsl(212, 4%, 95%);
-  --dark-color: hsl(212, 40%, 12%);
+  --first-color: #9CAFAA;
+  --first-color-light: #9CAFAA;
+  --font-color: #ffffff;
+  --second-color: #FBF3D5;
   --white-color: hsl(212, 4%, 95%);
-  --body-color: hsl(212, 42%, 15%);
-  --container-color: HSL(210, 70%, 50%);
+
+  --container-color: #EFBC9B;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -117,7 +116,7 @@ img{
   color: var(--first-color);
 }
 .nav__logo{
-  color: var(--white-color);
+  color: var(--font-color);
 }
 .nav__toggle{
   color: var(--white-color);
@@ -127,13 +126,13 @@ img{
 /*===== Dark Theme =====*/
 .dark-theme {
   --first-color: hsl(0, 0%, 15%);
-  --first-color-light: hsl(0, 0%, 15%);
-  --first-color-alt: hsl(32, 75%, 50%);
-  --second-color: hsl(212, 42%, 15%);
+  --font-color: #ffffff;
+  --first-color-alt: #50727B;
+  --second-color: #344955;
   --dark-color: white;;
   --white-color: hsl(0, 0%, 15%);
   --body-color: hsl(0, 0%, 15%);
-  --container-color: HSL(180, 50%, 50%) ;
+  --container-color: #35374B;
 }
 
 .bx-moon:before {
@@ -169,8 +168,8 @@ h1::before {
   left: 0;
   width: 0;
   height: 100%;
-  color: var(--second-color);
-  border-right: 2px solid var(--second-color);
+  color: var(--font-color);
+  border-right: 2px solid var(--font-color);
   overflow: hidden;
   animation: animate 6s linear infinite;
 }
@@ -267,7 +266,7 @@ h1::before {
 
 .card__name {
   font-size: var(--h2-font-size);
-  color: var(--second-color);
+  color: var(--font-color);
   margin-bottom: .75rem;
 }
 
@@ -281,7 +280,7 @@ h1::before {
   background-color: var(--first-color);
   padding: .75rem 1.5rem;
   border-radius: .25rem;
-  color: var(--dark-color);
+  color: var(--font-color);
   font-weight: 600;
 }
 
@@ -295,7 +294,7 @@ h1::before {
 .swiper-button-next {
   width: initial;
   height: initial;
-  font-size: 3rem;
+  font-size: 25px;
   color: var(--second-color);
   display: none;
 }
@@ -310,7 +309,7 @@ h1::before {
 
 .swiper-pagination-bullet {
   background-color: hsl(212, 32%, 40%);
-  opacity: 1;
+  opacity: 10;
 }
 
 .swiper-pagination-bullet-active {
