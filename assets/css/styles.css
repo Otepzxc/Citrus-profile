@@ -14,7 +14,6 @@
   --font-color: #ffffff;
   --second-color: #FBF3D5;
   --white-color: hsl(212, 4%, 95%);
-
   --container-color: #EFBC9B;
 }
 
@@ -171,7 +170,7 @@ h1::before {
   color: var(--font-color);
   border-right: 2px solid var(--font-color);
   overflow: hidden;
-  animation: animate 6s linear infinite;
+  animation: animate 4s linear infinite;
 }
 
 @keyframes animate {
@@ -204,6 +203,11 @@ h1::before {
   padding-bottom: 20px;
 }
 
+.taytel {
+  font-size: 30px;
+  text-align: center;
+  font-family: var(--body-font);
+}
 /*=============== CARD ===============*/
 .container {
   display: flex;
@@ -282,6 +286,13 @@ h1::before {
   border-radius: .25rem;
   color: var(--font-color);
   font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card__button:hover {
+  background-color: var(--second-color); /* Change to a different color on hover */
+  transform: translateY(-3px);
+  color: var(--first-color); /* Move the button 3 pixels up on hover */
 }
 
 /* Swiper class */
